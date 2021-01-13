@@ -1,0 +1,743 @@
+
+* {
+    font-family: Avenir, sans-serif;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    cursor: url(./image/Butterfly.net.ico), url(../image/Butterfly_72px_544652_easyicon.net.png), url(cursors/cursor.gif), pointer;
+}
+
+main {
+    margin: 2em 3em;
+    padding: 1em 2em;
+}
+
+section {
+    margin-top: 15px;
+    padding: 5px auto;
+    width: 100%;
+
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/*HEADER & FOOTER*/
+header {
+    position: relative;
+    color: white;
+    background-color: #0c0c17;
+    background-size: cover;
+    background-repeat: non-repeat;
+    text-align: center;
+    height: 100%;
+}
+
+nav h1 {
+    color: white;
+    font-size: 1.5em;
+    width: 40%;
+    padding-left: 1em;
+    /* padding-top: 1em; pour le text-shadow*/
+    text-align: start;
+    font-family: 'Pacifico', cursive;
+    /* lautre pour joili? */
+    text-shadow: 
+                0 0 5px #fefcc9,
+                10px -2px 20px #feec85,
+                -20px -5px 30px #ffae34,
+                20px -15px 40px #ec760c,
+               -20px -25px 50px #cd4606,
+               0 -30px 60px #973716,
+                6px -52px 70px #451b0e
+}
+
+
+header>nav {
+    color: white;
+    background-color: #0c0c17;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 1em 2em 1em 2em;
+    max-height: 5em;
+    min-height: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header>nav>ul {
+    width: 60%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+
+}
+
+
+nav a {
+    text-decoration: none;
+    color: snow;
+    opacity: 1;
+    margin-left: 0.6em;
+}
+
+
+.lan {
+    transition-property: transform;
+    transition-duration: .2s;
+    transform: scale(1);
+}
+
+.lan:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 5px 11px yellow;
+
+}
+#container {
+     cursor: auto;
+}
+#none {
+ width: .1em;
+ height: .1em;
+ 
+}
+
+/* cava est ici */
+
+.canvaText {   /*  不知为什么竟然影响canva特效的高度，可能是由于它的子项position都是abosult的原因。 */
+  height: 1px;
+}
+.canvasPlace {
+  overflow: hidden;
+
+}
+
+
+.ph {
+    display: block;
+    border: 6px solid snow;
+    border-radius: 50%;
+   
+    position: absolute;
+    z-index: 2;
+    top: 32%; 
+    left: 40%;
+}
+
+.dans-nav {
+    text-decoration: none;
+
+}
+
+.telechargecv {
+    border: yellowgreen 1px solid;
+    border-radius: 15px;
+    background-color: yellow;
+    
+    padding: 0.3em 3em;
+    position: absolute;
+    z-index: 2;
+    top: 88%; 
+    left: 38%;
+}
+
+.telechargecv a {
+    text-decoration: none;
+   
+}
+
+.image h2 {
+   
+    position: absolute;
+    z-index: 2;
+    top: 69%; 
+    left: 41%;
+}
+
+.image p {
+  position: absolute;
+  z-index: 2;
+  top: 76%; 
+  left: 27%;
+}
+
+
+footer {
+    background-color: #0c0c17;
+    color: white;
+    padding: 3em;
+    text-align: center
+}
+
+.foh2 {
+    font-weight: 1200;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 5em auto;
+}
+
+.fo1 ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.fop {
+    border-top: .6px solid rgb(46, 43, 43);
+    padding-top: 1.5em;
+
+
+}
+
+fop2 {
+
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    font-size: 5em;
+}
+
+.fop2 a {
+    display: block;
+    text-align: right;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/*section presant*/
+.presant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.image2 {
+
+    border: 3px solid rgba(5, 85, 99, 0.719);
+}
+
+.pre {
+    width: 55%;
+    text-align: left;
+    padding: 0 .5em 0 1.5em;
+    margin: o auto 6% auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4em;
+    margin-bottom: 3.5em;
+}
+
+.pre h2 {
+    margin-top: 1em;
+}
+.pre h3 {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.pre p {
+  background-color: snow;
+}
+
+.contact-flex {
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.list li {
+    margin-bottom: 1.5em;
+}
+
+
+
+/*section service ci-desous 另外compretence type2 也用了这段代码*/
+.service {
+    background-color: #f5f8fd;
+    padding-top: 3em;
+    text-align: center;
+}
+
+.service1 {
+
+    margin: 1em auto 2em;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer;
+
+}
+
+.icon-item {
+    border: 1px solid rgb(41, 43, 44);
+    box-shadow: 1px 2px 8px gray;
+    padding: 2em 1em;
+    margin-bottom: 5em;
+    width: 250px;
+    height: auto;
+    min-height: 250px;
+    background-color: white;
+
+}
+
+.icon-item i {
+    margin: 2em;
+    font-size: 3em;
+}
+.iconText h3 {
+  margin: 1em auto;
+}
+.icon-item-c h3 {
+  margin: .6em auto;
+}
+.iconText {
+  display: none;
+}
+.icon_service {
+  width: 45%;
+  height: 40%;
+  margin-top: 3em;
+  transition: scale(1) .3s;
+}
+.icon-item:hover .icon_service {
+  margin-top: -.7em;
+  transform: scale(.7);
+}
+.icon-item:hover .iconText {
+  display: block;
+  margin-top: -1.5em;
+}
+
+/* compritence type2 补充动画部分代码 */
+compretence_animation {
+    overflow: hidden;
+}
+animation_left1 {
+    /* position: relative;
+    right: 30em; */
+    position: absolute;
+
+}
+compretence_animation:hover animation_left1 {
+    right: 0;
+}
+/*section expreience ci-desous*/
+.eh {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.expr {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  /*   flex-wrap: wrap; */
+
+}
+
+.expr2 {
+   margin-left: 1.4em;
+   background-color: rgb(253, 253, 253);
+   height: 52%;
+}
+
+
+.expr1 {
+  background-color: rgb(255, 255, 255);
+}
+
+.enf {
+
+    border-left: midnightblue dotted 2px;
+    margin-bottom: 2em;
+    padding-left: 0.9em; 
+}
+
+.espace {
+    border-bottom: 30px solid #f5f8fd;
+    width: 100%;
+}
+
+/*section formation ci-desous*/
+.formation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3em;
+    margin-bottom: 2.5em;
+    padding-bottom: 3em;
+    border-bottom: 30px solid #f5f8fd;
+    background-color: snow;
+
+}
+
+
+.formation h2 {
+    padding-bottom: 1.2em;
+}
+
+.forimg {
+    border: solid white 1px;
+    border-radius: 20px;
+}
+
+.for-item {
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+/* section compretence ci-desous 暂时注释掉没有用*/
+.compretence {
+    margin: auto 7.5% 5em;
+}
+
+.compretence h3 {
+    padding-top: 1.6em;
+    padding-bottom: 1em;
+}
+
+.comp {
+    margin-bottom: 1.2em;
+
+}
+
+.comp>label {
+    padding-right: 21em;
+    display: inline-block;
+    width: 35%;
+
+}
+
+.comp>progress {
+    display: inline-block;
+    justify-content: right;
+    width: 55%;
+    height: 1.8em;
+    color: rgba(54, 224, 11, 0.062);
+    /*marche pas avec brower goole? */
+    background-color: ;
+    border: rgb(62, 67, 68) 1px solid;
+    /*marche pas avec brower goole? */
+    border-radius: 12px;
+    /*marche pas avec brower goole? */
+
+}
+
+.comp2>progress {
+    display: block;
+    width: 90%;
+    border: rgb(62, 67, 68) 1px solid;
+    border-radius: 12px;
+    color: rgba(32, 207, 25, 0.548);
+
+
+}
+
+.comp2>label {
+    text-align: right;
+    justify-content: right;
+
+}
+/* section language ci-desous */
+.languages {
+ cursor: pointer;
+ margin-bottom: 4.5em;
+ padding-bottom: 4em;
+ color: rgb(111, 110, 110);
+}
+
+.languages_titre {
+  margin: 2em auto;
+  color: #000000;
+
+}
+.contenue_de_lang {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+ /*  justify-content: center; */
+}
+.logo__wrapper {
+  text-align: center;
+  width: 12.5%;
+  min-width: 9em;
+  min-height: ;
+  display: block; 
+  border: 1px solid gray;
+  padding: 2% 2% .5em;
+  margin-left: 3%;
+  margin-bottom: 1em;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px 0 rgba(189,208,223,.25);
+}
+.logo__wrapper:hover{
+  margin-top: -.8em;
+  margin-right: 0.5em;
+  color: #000000;
+}
+.logo__container {
+  height: 70%;
+  min-height: 5em;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  margin-bottom: 1em;
+}
+.logo__img {
+  
+  width: 65%;
+  height: 65%;
+  min-width: 3em;
+  min-height: 3em;
+}
+.logo__img1 {
+  
+  width: 65%;
+  height: 65%;
+  min-width: 3em;
+  min-height: 3em;
+  margin-left: 1.6em;
+}
+.logo__img2 {
+  
+  width: 75%;
+  height: 75%;
+  min-width: 3em;
+  min-height: 3em;
+}
+
+
+/* section contact moi ci-desous */
+
+.cont {
+    background-color: #f5f8fd;
+    padding: 4em;
+    margin: auto 0;
+    width: 100%;
+    /* z-index: 5; */
+
+
+}
+
+.cont h2 {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 5px solid #f7eccb; 
+    width: 8em;
+  /*   text-decoration: underline ;
+    text-decoration-color: #f7eccb;
+    text-decoration-thickness: 5px;
+    text-underline-offset:.6em;
+ */
+}
+
+.hform {
+    background-color: white;
+    margin: 3em;
+    padding: 3.5em 3em;
+    background-image: url(pourform.webp);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+.cont h3 {
+    margin-bottom: 1em;
+}
+
+.contat-p {
+    padding: 8px auto;
+}
+
+form {
+    margin-top: 1.5em;
+
+}
+
+.nomemail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form-nom {
+    width: 48%;
+}
+
+.form-emil {
+    width: 48%;
+}
+
+.name {
+
+    color: rgb(39, 37, 37);
+    padding: 1em;
+    width: 100%;
+    margin: 0.7em auto;
+}
+
+.textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 1em;
+    margin-bottom: 2em;
+    font-style: italic;
+
+}
+
+.contact-submit input {
+    padding: .6em;
+    font-size: 1em;
+    background-color: #febf01;
+    border: darkslategrey solid 1px;
+    box-shadow: 2px 3x 6px black;
+    border-radius: 3px;
+    color: cornsilk;
+    cursor: pointer;
+}
+
+
+/*section de centre d'interet */
+
+
+.sintreret {
+  margin: 3em auto .5em;
+  cursor: url(./image/Butterfly.net.ico), url(../image/Butterfly_72px_544652_easyicon.net.png), url(cursors/cursor.gif), pointer;
+}
+.sintreret>h2 {
+  padding: 2em auto;
+}
+
+.iimage {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 3em;
+}
+
+.review-item {
+  text-align: center;
+  padding: 2em 17em 0;
+  margin-bottom: 1em;
+  cursor: url(./image/Butterfly.net.ico), url(../image/Butterfly_72px_544652_easyicon.net.png), url(cursors/cursor.gif), pointer;
+}
+
+.boutton_change {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+cursor: pointer;
+padding: 2em 46% 0;
+}
+.boutton_change a {
+color: #000000;
+text-decoration: none;
+}
+.boutton_change a li {
+list-style: none;
+}
+#view {
+position: relative;
+width: 100%;
+height:46em;
+/*  margin-left: 10%;  */
+
+overflow: hidden;
+}
+
+#view:after {
+content: '.';
+display: block;
+clear: both;
+height: 0;
+visibility: hidden;
+}
+#img_list {
+position: absolute;
+width: 100%;
+
+}
+
+#img_list li {
+float: left;
+ width: 100%;
+height:46em; 
+/*  z-index: -10; ??????????????????????????marche pas */
+}
+.clean_b {
+clear: both;
+}
+/* finr de model de section de centre d'interet */
+/*caroussel de loisire finie*/
+
+/* senction simple pour l'instant */
+.contenue-interet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: url(./image/Butterfly.net.ico), url(../image/Butterfly_72px_544652_easyicon.net.png), url(cursors/cursor.gif), pointer;
+
+}
+
+.fig {
+  display: inline-block;
+  text-align: center;
+  margin: 3em 1em 8em;
+
+
+}
+
+figcaption {
+  padding: 2em;
+}
+
+.sp {
+  padding: 1em 0 1.5em;
+  line-height: 1em;
+}
+
+.contenue-interet {
+  padding-left: 2em;
+  margin-left: 2em;
+}
+
+.imagecerf {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  margin-top: 3em;
+}
+
+
+

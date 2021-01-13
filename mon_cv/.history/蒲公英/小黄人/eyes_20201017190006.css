@@ -1,0 +1,48 @@
+.body-face {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;/* 视口高度的1% */
+    background-color: #5d3800;
+}
+.face {
+    position: relative;
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    background-color: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 嘴巴 */
+.face::before{
+    content: ''; /* 内容 */
+    position: absolute;/* 绝对定位 */
+    top: 61%; /* 距上部 */
+    width: 35%;
+    height: 20%;
+    background: #b57700;
+    border-bottom-left-radius: 5em; /* 左下圆角 */
+    border-bottom-right-radius: 5em;
+    transition: .5s; /* 过渡时间 */
+  }
+
+  /* 悬停到face时嘴就行变化 */
+.face:hover::before{
+    content: '';
+    top: 61%; /* 距上部 */
+    width: 35%;
+    height: 8%;
+    /* 圆角归0为矩形 */
+    border-radius: 0;
+  }
+/* 眼睛框体 */
+.eyes{
+    position: relative;
+    top: -40px;
+    display: flex;
+  }
+
+  

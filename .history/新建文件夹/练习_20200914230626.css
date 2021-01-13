@@ -1,0 +1,264 @@
+
+
+body {
+    margin: 6em 6em;
+    padding: 4em;
+}
+
+.text {
+    text-align: center;
+}
+/*
+.slide-container {
+    position: relative;
+    width: 800px;
+    height: 900px;
+    overflow: hidden;
+    border: 5px solid #fff;}
+    .slid {
+    position: absolute;
+    left: 35em;
+    top: 11em;
+    animation: slide 5s infinite;
+    padding: 3em;
+    text-align: center;
+
+    }
+    @keyframes slide{
+    0%{ transform:translateX(0px) }
+    33%{ transform:translateX(-200px) }
+    66%{ transform:translateX(-400px) }
+    100%{ transform:translateX(-600px) }
+   
+    }
+    */
+
+    .css-slider-wrapper {
+        display: block;
+        background: #FFF;
+        overflow: hidden;
+        position:absolute; 
+        left:0; 
+        right:0; 
+        top:0; 
+        bottom:0;
+      }
+/* Slider */
+.slider {
+        width: 100%;
+        height: 100%;
+        background: rgb(236, 79, 79);
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        z-index: 0;
+         
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        flex-wrap: wrap;
+         
+        -webkit-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+         
+        -webkit-transition: -webkit-transform 1600ms;
+        transition: -webkit-transform 1600ms, transform 1600ms;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    /* each slide background color */ 
+    .slid1 {
+        background: #00bcd7;
+        left: 0;
+    }
+    .slid2 {
+        background: #970083;
+        left: 100%
+    }
+    .slid3 {
+        background: #2a0ec7;
+        left: 200%
+    }
+    .slid4 {
+        background: #c5b913;
+        left: 300%;
+    }
+    .slid5 {
+        background-color: tomato;
+        left: 400%;
+    }
+
+    .inslider{
+        text-align: center;
+    }
+    /* Slider inner content 滑块内部内容 */
+.text {
+    color: rgb(10, 10, 10);
+    font-weight: ;
+    text-align: center
+    margin: 2em;
+    padding: 2em;
+    width: 20%;
+    height: 30%;
+    
+    line-height: ;
+    opacity: 1;
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+}
+.text h2{
+
+}
+.iimage {
+    
+    padding: ;
+    background: rgba(255,255,255,0.3);
+    
+    opacity: 1;
+    font-size: ;
+    line-height: px;
+    display: ;
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+}
+.text,
+.iimage {
+    -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+    transition: transform 800ms, opacity 800ms;
+    -webkit-transition-delay: 0.5s; /* Safari */
+    transition-delay: 0.5s;
+}
+
+   
+  
+/* Next and previous button*/
+.control {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  z-index: 55;
+}
+.control label {
+  z-index: 0;
+  display: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 50px;
+  color: #FFF;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.control label:hover {
+  opacity: 0.5;
+  background-color: ; /* 我加的 ，好像没用*/
+}
+.next {
+  right: 1%;
+}
+.previous {
+  left: 1%;
+}
+
+/* 滑块控件 */ 
+   /* slider-pagination */ 
+   .slider-pagination {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+}
+.slider-pagination label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    margin: 0 2px;
+    border: solid 1px rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+ /* next and previous will be  active when slider moving*/
+ .slide-radio1:checked ~ .next .numb2, 
+ .slide-radio2:checked ~ .next .numb3, 
+ .slide-radio3:checked ~ .next .numb4, 
+ .slide-radio4:checked ~ .next .numb5, 
+ .slide-radio2:checked ~ .previous .numb1, 
+ .slide-radio3:checked ~ .previous .numb2, 
+ .slide-radio4:checked ~ .previous .numb3,
+ .slide-radio5:checked ~ .previous .numb4 {
+   display: block;
+   z-index: 1
+ }
+ 
+ /* css for active current pagination */
+ .slide-radio1:checked ~ .slider-pagination .page1, 
+ .slide-radio2:checked ~ .slider-pagination .page2, 
+ .slide-radio3:checked ~ .slider-pagination .page3, 
+ .slide-radio4:checked ~ .slider-pagination .page4,
+ .slide-radio5:checked ~ .slider-pagination .page5 {
+   background: rgba(255,255,255,1)
+ }
+/* Slider control sliding effect */
+.slide-radio1:checked ~ .slider {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .slide-radio2:checked ~ .slider {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  .slide-radio3:checked ~ .slider {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+  .slide-radio4:checked ~ .slider {
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%);
+  }
+  .slide-radio5:checked ~ .slider {
+    -webkit-transform: translateX(-400%);
+    transform: translateX(-400%);
+  }
+
+  .slide-radio1:checked ~ .slide1 .text, 
+  .slide-radio2:checked ~ .slide2 .text, 
+  .slide-radio3:checked ~ .slide3 .text, 
+  .slide-radio4:checked ~ .slide4 .text,
+  .slide-radio5:checked ~ .slide5 .text, 
+  .slide-radio1:checked ~ .slide1 .iimage, 
+  .slide-radio2:checked ~ .slide2 .iimage, 
+  .slide-radio3:checked ~ .slide3 .iimage, 
+  .slide-radio4:checked ~ .slide4 .iimage,
+  .slide-radio5:checked ~ .slide5 .iimage, {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+  }
+   
+  @media only screen and (max-width: 767px) {
+  .text {
+      font-size: 20px;
+  }
+  .inslider {
+      padding: 0 2%
+  }
+  .control label {
+      font-size: 35px;
+  }
+  .iimage {
+      padding: 0 30px;
+  }
+  }
+
+
+

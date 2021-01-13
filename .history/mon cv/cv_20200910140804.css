@@ -1,0 +1,58 @@
+* {
+    font-family: Avenir, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ededed;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/*HEADER & FOOTER*/
+header {
+    
+    color: white;
+    background-image: url();
+    background-size: cover;
+    background-repeat: non-repeat;
+    background-attachment:scroll; 
+    background-position:center bottom;
+    
+    
+}
+
+
+header h1 {
+    color: white;
+    font-size: 1.5em;
+    width: 40%;
+    margin: 0 auto;
+}
+
+header > nav {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 50px;
+    max-height: 5em;
+    min-height: 1em; 
+   /* position: fixed;
+    z-index: ;*/
+}
+ 
+header > nav > ul{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}

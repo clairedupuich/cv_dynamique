@@ -1,0 +1,13 @@
+.body-face {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;/* 视口高度的1% */
+    background-color: #5d3800;
+}
+.face {
+    position: relative;
+    width: 35em;
+    height: 35em;
+    
+}

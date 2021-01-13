@@ -1,0 +1,397 @@
+/*STYLES GENERAUX*/
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background: #ededed;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*HEADER & FOOTER*/
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/cv-cover.jpg") #4f4f4f;
+    box-shadow: 0px 0px 15px #333;
+}
+header{
+    border-bottom: 2px solid #fff;
+    height: 120px;
+}
+header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    border-top: 2px solid #fff;
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    color: #fff;
+}
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.prez{
+    border-bottom: 2px dashed #ccc;
+}
+.prez a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+
+/*SECTION COMPETENCES*/
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+    max-height: 3em;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c85{
+    width: 85%;
+    background-color: #8B8;
+}
+.c90{
+    width: 90%;
+    background-color: #4B8;
+}
+.c95{
+    width: 95%;
+    background-color: #4B8;
+}
+.c100{
+    width: 100%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+/*SECTION INTERETS*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: #EA0;
+    }
+    header h1{
+        width: 80%;
+    }
+    .prez, .contact{
+        flex: 0 0 45%;
+    }
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .prez a{
+        border: 2px solid transparent;
+    }
+    .prez a:hover{
+        color: #f28835;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}
+
+
+
+
+@charset utf-8; 
+/* common */ 
+body{background: #ddd;overflow-x: hidden;} 
+#bd{width: 960px;margin: 100px auto;max-width: 960px;} 
+/* module: sliders */ 
+#sliders{ 
+border-radius: 5px; 
+box-shadow: 1px 1px 4px #666; 
+padding: 1%; 
+background: #fff; 
+} 
+#overflow{ 
+width: 100%; 
+overflow: hidden; 
+} 
+#sliders .inner{ 
+width: 500%; 
+transiton: all 1s linear; 
+-webkit-transition: all 1s linear; 
+} 
+#sliders article{ 
+float: left; 
+width: 20%; 
+} 
+#sliders article .info{ 
+position: absolute; 
+opacity: 0; 
+padding: 30px; 
+color: #666; 
+font-family: Arial; 
+transition: opacity 0.1s ease-out; 
+-webkit-transform: translateZ(0); 
+-webkit-transition: opacity 0.1s ease-out; 
+} 
+#sliders article .info h1{ 
+font-size: 22px; 
+font-weight: bold; 
+margin: 0 0 5px; 
+} 
+#sliders article .info a{ 
+color: #666; 
+text-decoration: none; 
+} 
+/* module: controls */ 
+#controls{ 
+height: 50px; 
+width: 100%; 
+margin-top: -25%; 
+} 
+#controls label{ 
+display: none; 
+width: 50px; 
+height: 50px; 
+opacity: 0.3; 
+cursor: pointer; 
+} 
+#controls label:hover{ 
+opacity: 1; 
+} 
+/* module: active */ 
+#active{ 
+width: 100%; 
+margin-top: 23%; 
+text-align: center; 
+} 
+#active label{ 
+display: inline-block; 
+width: 10px; 
+height: 10px; 
+border-radius: 5px; 
+background: #bbb; 
+border-color: #777; 
+} 
+#active label:hover{ 
+background: #ccc; 
+} 
+/* input checked change style */ 
+#slider1:checked ~ #active label:nth-child(1), 
+#slider2:checked ~ #active label:nth-child(2), 
+#slider3:checked ~ #active label:nth-child(3), 
+#slider4:checked ~ #active label:nth-child(4), 
+#slider5:checked ~ #active label:nth-child(5){ 
+background: #333; 
+} 
+#slider1:checked ~ #controls label:nth-child(5), 
+#slider2:checked ~ #controls label:nth-child(1), 
+#slider3:checked ~ #controls label:nth-child(2), 
+#slider4:checked ~ #controls label:nth-child(3), 
+#slider5:checked ~ #controls label:nth-child(4){ 
+display: block; 
+float: left; 
+background: url(../img/prev.png) no-repeat; 
+margin-left: -70px; 
+} 
+#slider1:checked ~ #controls label:nth-child(2), 
+#slider2:checked ~ #controls label:nth-child(3), 
+#slider3:checked ~ #controls label:nth-child(4), 
+#slider4:checked ~ #controls label:nth-child(5), 
+#slider5:checked ~ #controls label:nth-child(1){ 
+display: block; 
+float: right; 
+background: url(../img/next.png) no-repeat; 
+margin-right: -70px; 
+} 
+#slider1:checked ~ #sliders article:nth-child(1) .info, 
+#slider2:checked ~ #sliders article:nth-child(2) .info, 
+#slider3:checked ~ #sliders article:nth-child(3) .info, 
+#slider4:checked ~ #sliders article:nth-child(4) .info, 
+#slider5:checked ~ #sliders article:nth-child(5) .info{ 
+opacity: 1; 
+transition: all 0.6s ease-out 1s; 
+-webkit-transition: all 0.6s ease-out 1s; 
+} 
+#slider1:checked ~ #sliders .inner{ 
+margin-left: 0; 
+} 
+#slider2:checked ~ #sliders .inner{ 
+margin-left: -100%; 
+} 
+#slider3:checked ~ #sliders .inner{ 
+margin-left: -200%; 
+} 
+#slider4:checked ~ #sliders .inner{ 
+margin-left: -300%; 
+} 
+#slider5:checked ~ #sliders .inner{ 
+margin-left: -400%; 
+} 
+
+/*second model

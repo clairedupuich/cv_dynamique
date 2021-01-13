@@ -1,0 +1,60 @@
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ededed;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/*HEADER & FOOTER*/
+header{
+    
+   
+    background-image: url("https://ccdn.goodq.top/caches/a8a4b02e7048697ffdf7bfb95c81ad71/aHR0cHM6Ly81ZGM1MTAyYWJiZjFhLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMTEvMzAxMGQ5ODAxMjA1YmE2YmVlNjA5Y2Y3MGU2YjMwNDUtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp") #4f4f4f;
+    background-size: cover;
+    background-repeat: non-repeat;
+    background-attachment:scroll; 
+    background-position:center bottom;
+    
+    
+}
+header{
+    color: white;
+   /* border-bottom: 2px solid #fff;*/
+   
+}
+header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 40%;
+    margin: 0 auto;
+}
+
+header > nav {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 50px;
+    max-height: 5em;
+    min-height: 1em; 
+   /* position: fixed;
+    z-index: ;*/
+}
+ 
+header > nav > ul{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}

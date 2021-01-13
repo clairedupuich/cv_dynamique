@@ -1,0 +1,145 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+}
+
+ul,li{
+
+    list-style: none;
+
+}
+
+#carousel{
+
+	width: 600px;
+
+	height: 400px;
+
+	background-color: rgba(255,63,63,.3);
+
+	margin: 20px auto;
+
+}
+
+#carousel .slider{
+
+	padding: 0;
+
+	margin: 0;
+
+	position: relative;
+
+}
+
+#carousel .items{
+
+	width: 100%;
+
+	position: absolute;
+
+	animation: carousel 20s linear infinite;
+
+	
+
+	/* animation: name duration timing-function delay iteration-count direction;
+
+	animation: 绑定到选择器的keyframe名称 花费时长 速度曲线 延迟 播放次数 是否反向播放动画; */
+
+}
+
+#carousel .items+.items:hover{
+
+	animation-play-state: paused;
+
+	-webkit-animation-play-state: paused; /* Safari 和 Chrome */
+
+}
+
+#carousel .items img{
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+#carousel .item_1{
+
+	animation-delay: -1s;
+
+	z-index: -1;
+
+}
+
+#carousel .item_2{
+
+	animation-delay: 3s;
+
+	z-index: -1;
+
+}
+
+#carousel .item_3{
+
+	animation-delay: 7s;
+
+	z-index: -1;
+
+}
+
+#carousel .item_4{
+
+	animation-delay: 11s;
+
+	z-index: -1;
+
+}
+
+#carousel .item_5{
+
+	animation-delay: 15s;
+
+	z-index: -1;
+
+}
+
+#carousel h1{
+
+	position: absolute;
+
+	top: 50px;
+
+	left: 200px;
+
+	background-color: #FF3F3F;
+
+	width: 100px;
+
+	height: 100px;
+
+	line-height: 100px;
+
+	border-radius: 100%;
+
+	font-size: 40px;
+
+	color: #fff;
+
+	text-align: center;
+
+}
+
+@keyframes carousel{
+
+    0%{
+
+        opacity:0;
+
+        z-index:2;
+
+    }
+
+    

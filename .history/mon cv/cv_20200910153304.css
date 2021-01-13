@@ -1,0 +1,59 @@
+* {
+    font-family: Avenir, sans-serif;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background: #ededed;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/*HEADER & FOOTER*/
+header {
+    
+    color: white;
+    background-image: url(https://www.dailymotion.com/thumbnail/video/k5asAxW55QzwOMtPPq0);
+    background-size: cover;
+    background-repeat: non-repeat;
+    text-align: center;
+
+}
+
+
+header h1 {
+    color: white;
+    font-size: 1.5em;
+    width: 40%;
+    margin: 0 auto;
+}
+
+header > nav {
+    color: white;
+    background-color: dodgerblue;
+    opacity: 0.3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3em 0;
+    padding: 0 12em;
+    max-height: 5em;
+    min-height: 1em; 
+   /* position: fixed;
+    z-index: ;*/
+}
+ 
+header > nav > ul{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}

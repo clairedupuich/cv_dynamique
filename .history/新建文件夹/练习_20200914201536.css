@@ -1,0 +1,33 @@
+
+
+
+
+body {
+    margin: 6em 6em;
+    padding: 4em;
+}
+.slide-container {
+    position: relative;
+    width: 400px;
+    height: 900px;
+    overflow: hidden;
+    border: 5px solid #fff;}
+    .slid {
+    position: absolute;
+    left: 15em;
+    top: 15em;
+    animation: slide 5s infinite;
+    padding: 3em;
+    text-align: center;
+
+    }
+    @keyframes slide{
+    0%{ transform:translateX(0px) }
+    33%{ transform:translateX(-200px) }
+    66%{ transform:translateX(-400px) }
+    100%{ transform:translateX(-600px) }
+    100%{ transform:translateX(0px) }
+    }
+    .text {
+        text-align: center;
+    }

@@ -1,0 +1,90 @@
+
+
+body {
+    margin: 6em 6em;
+    padding: 4em;
+}
+
+.text {
+    text-align: center;
+}
+/*
+.slide-container {
+    position: relative;
+    width: 800px;
+    height: 900px;
+    overflow: hidden;
+    border: 5px solid #fff;}
+    .slid {
+    position: absolute;
+    left: 35em;
+    top: 11em;
+    animation: slide 5s infinite;
+    padding: 3em;
+    text-align: center;
+
+    }
+    @keyframes slide{
+    0%{ transform:translateX(0px) }
+    33%{ transform:translateX(-200px) }
+    66%{ transform:translateX(-400px) }
+    100%{ transform:translateX(-600px) }
+   
+    }
+    */
+
+    slide-container {
+        display: block;
+        background: #FFF;
+        overflow: hidden;
+        position:absolute; 
+        left:0; 
+        right:0; 
+        top:0; 
+        bottom:0;
+      }
+
+      .slid {
+        width: 50%;
+        height: 50%;
+        background: rgb(243, 237, 237);
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        z-index: 0;
+         
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: row;
+        flex-wrap: wrap;
+         
+        -webkit-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+         
+        -webkit-transition: -webkit-transform 1600ms;
+        transition: -webkit-transform 1600ms, transform 1600ms;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    /* each slide background color */ 
+    .slid1 {
+        background: #00bcd7;
+        left: 0;
+    }
+    .slid2 {
+        background: #970083;
+        left: 100%
+    }
+    .slid3 {
+        background: #2a0ec7;
+        left: 200%
+    }
+    .slid4 {
+        background: #c5b913;
+        left: 300%;
+    }

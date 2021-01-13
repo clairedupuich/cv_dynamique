@@ -1,0 +1,15 @@
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ededed;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}

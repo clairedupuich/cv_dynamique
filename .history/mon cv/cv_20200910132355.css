@@ -1,0 +1,70 @@
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ededed;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/*HEADER & FOOTER*/
+header{
+    
+   
+    background-image: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/cv-cover.jpg") #4f4f4f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 270px;
+    box-shadow: 0px 0px 15px #333;
+    
+}
+header{
+    color: white;
+   /* border-bottom: 2px solid #fff;*/
+   
+}
+header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 40%;
+    margin: 0 auto;
+}
+
+header > nav {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 50px;
+    max-height: 5em;
+    min-height: 1em; 
+    position: fixed;
+}
+ 
+header > nav > ul{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+footer{
+    border-top: 2px solid #fff;
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+   
+    text-align: center;
+}
+footer a{
+    color: #fff;
+}

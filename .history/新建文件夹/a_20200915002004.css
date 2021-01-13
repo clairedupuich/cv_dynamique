@@ -1,0 +1,52 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+}
+
+ul,li{
+
+    list-style: none;
+
+}
+
+#carousel{
+
+	width: 600px;
+
+	height: 400px;
+
+	background-color: rgba(255,63,63,.3);
+
+	margin: 20px auto;
+
+}
+
+#carousel .slider{
+
+	padding: 0;
+
+	margin: 0;
+
+	position: relative;
+
+}
+
+#carousel .items{
+
+	width: 100%;
+
+	position: absolute;
+
+	animation: carousel 20s linear infinite;
+
+	
+
+	/* animation: name duration timing-function delay iteration-count direction;
+
+	animation: 绑定到选择器的keyframe名称 花费时长 速度曲线 延迟 播放次数 是否反向播放动画; */
+
+}
+

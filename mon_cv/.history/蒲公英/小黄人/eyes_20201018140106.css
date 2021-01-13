@@ -1,0 +1,96 @@
+.body-face {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;/* 视口高度的1% */
+    background-color: #2c1c03;
+   /* S *//* cursor: url("小图片地址") */
+    cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABU1BMVEX////MzMzIyMjJycnLy8vX19f19fXFxcX39/fHx8fV1dUAAAD8/Py1tbWZmZm+vr6fn5+oqKi6urrk5OTu7u6Tk5OsrKykpKTn5+fg4OBvb293d3eHh4dLS0uwsLCUlJRhYWE7OzssLCwgIhZiYmAPDgp1dXSAgIBNTU11cmFUT0SoqJK1s5yRkXyEfGFfXUw2NjYlJhsYFxGfnoTGvqR9fXWKhmm6uJF+fmzKxbG2rIhGRzuglX9zal1qal/b2cJAOzSVm4/Cs6LAwbirqZ9WVU6RjX6gn4tEPytWVEE6PTWLh3Z2b1vExqd6f2l0cmYgHh2UmH8aGRBtYk1DSTIgKRN3emKLiX8qLCBPSzkwMyJva0tUTzkTFwqin3O0sIbk5sw4Lxt+gWQzPCHX2q3T0LATKRaCe1kMGAsVNBpgZEsnSi8hMyAPJQscTBwqYy5TUlq79Rq7AAAN3ElEQVR4nO2d+3faRhqGJUASoLuQBAhJSDIy4mZxsQkJDqHbYMA4McZZF5Om2+3udts0e/n/f9oR+IK7m26Pi4xEZw4n/o4sW/P6m3nnmdFIQVA0gixLBEV3MkaiUWIVENHoTsYIjseTGCjJOI7vYox5IhMxUBIrwTsXx7woCL3Ftxjdeg2gwo0oDILj+RZHkWA4nn8xjgTD8XyMkWD0Fj+ZZus1gAp/s8JgOB7kUsilkEuDUhuo8NEKg+B4kEshl0IuDUptoMJHKQyG40EuhVwKuTQotYEKH60wCI4HuRRyKeTSoNQGKnyUwmA4HuRSyKWQS4NSG6jw0QqD4HiQSyGXQi4NSm2gwkcpDIbjQS6FXAq5NCi1gQofrTAIjge5FHIp5NKg1AYqfJTCYDge5FLIpZBLg1IbqPDRCoPgeJBLIZdCLg1KbaDCRykMhuNBLoVcCrk0KLWBCh+t0G83i7C8zCb8+/3b5NKlmWGZYveIY5PJneXSWKz97KDWKQpEJLpzXJpmQRx7/qJaujjs5nQikfDvWluhtoyVR2MxtnJcfdl7ddAvCizh27W2oxAlDYEghC96r/4wmLTapaIuUNSTK/TTzSjFkWiWRc8rh6XuSfXAyctxanVOZEe4FMs5NPbl62FnWOqfH7a6RZZAk7vEpQROD1S0cviqd1TpDaqlcpnhBWKXuDQRz3IKN6xUT4aHx53heXmUY3Q2GtsdakvExeTRoHMxrJxXX0x6tfKooHI0sUsKETxDFMedSqU3qfROK5Pra0Pi2cjtqBiNhZ9LKTyDFsqVqntWrQE37V8Ocgx9OyoKHBuJhJxLk8lkQig0J2/evjzuDM4PywcHipzM4CuXK2pJXMTDzqVRQjgZz96+nZx/d9A/LF22HQ7NUN45KDNNiyJOEaHm0ggKJH5Rm+6VWp2L1stqp3zWVVkMT3inOEUxk8rghM9+4/tqYiySbrv9/tgtHU9qFbf3UtGToqeKI4kMhqVEIhZWhR6eeZWPvW4dVl1rSpYv24fueWfKsCmgijAsMYkms/7n0D8mxLGsTtMy+0Xr+ZvaWcedzS4Pj3pus0hjQiImmGoKRbFMHMwaQ8mlGMrvO45pmE5xcDAcDieVTnnWPx6W3JKj8lkxzmoozctCAg0rl7IKeVvsd91JZ9JuHbbJ7rB3WhvsS1kcKahZjuNpgtjsdZ+OS/npvcI/7l1dlc+Oj5/1yZOjvfbYKWKiaOlZLq2zvs/6faM2yb5TSO7ZV38nR2eTqksWvmq4i0EumhFMFPNSGA0tl6r3ApsNcn764Y/zcavWIL8akC9LjoApBpbkQDf0ncJ949LivUJ70djrjhfk3seSaxcmZKlTl1lTyS4Vhmq9FFuP6XuF5Ojd4uBg0STJ7tmo/LLhDvtFyXJ0PoZlQrVeGhXWjsei905Dzhezy/H1uAGis+NSdzopG5Jm5fPJFL6B6z4dl9JKMkXdHo8ltbVmure3WDTGXWA+/UlpTJ53zOJgqkorhX7PgzenMF1XFFkQkah3PIpz60mcNxaLOeiOJFnujEn3RV0p2DkJzYZLocAzyrSgCrI3M4rG2cF82mzeJtFuLOy90cImF+NLctrqGQV7X41lxadQuDHXSrCZKC1phpGmY18SyaPWwbX7/uvZaA4a52JhN+3ZbDFvfrA6g2lnYlpWESjEN3Ddp+NSUWQFmpNyPXP/y9evKu3Wx9HHb/70/puDedNuzGbzJtlcjJrkaem4Wz6YkQUmzQuxUK2XUhSt8xzHvaq548bw21et8Zwct9rty9EC+ExjNt+bgUQ2+1Z3Tv65OS1KPKOz4VovpVj69Wv+9ZfDaoccDSvD4dW7vcX1d+5iugBNFYz7NmlP+yPbnoGeaSrFtLew6PP8G90ctVFZLMmy1TfVaqVTvRiPpuXK89Z3Hxvk1ceF1ZgtZs3mklRPrz/M9my7WTcVDij0VhzDoZBCnx33jl6fTCbDNye13uQj2ZhMWq0X3y2ai8XH8V8Wzb2Vr9pN0iZBeyXJAcN4OXwShRtwrUz1r397dlit1UqD80mnNHx7vTd2Ox33yiVni/HX74DNrCYby389gaSpSjIbGi7F6JetN2++fVX9W6vTaZ25tWF1fNpy3VHDbjT2PIuZ3cympnezKtvhwIAYFi6NsF+9OK5dtJ9/++rw2ze12ouTaqfR7Ry2u4vFbN4AOvducthcmzcW8gROhYVLo3ztRa3dqVVPjitfnRxWSoe1qd17Mym15wBKR80GGOzXZhv2B0/otK5kcSoRjtXEGH30tt1qX7wfn3Xc8/Pyy9r41LXK1vza/gAmv3Zz3rfXFX7/w+org4mEz/dnNpVDVpZKf3/27Koy/Oas06tdXJTabsO27XmjP++OQNsEbLom8YcfPiy/1g3Wu2UaAi5NsDqzXzr45qrauyoNh9XK4fPKxbDnuiX3rDQ5+HrUBwofSPzxJotqHsBbGLhUzKJ0sXB29v59u1YtufXeUe+8131b67nlbg/IvDgl7XWJ9o8/roYOq26q6WwYuDQuZvOqUtBKvdrV5cHxVftduTzvdk8/zt1ut+S2ru3Geg7Jnz6R//jn957fmJpTTBKRwHMpFRd5Ts0VDGWguaVSabxwJxVA34tuvz89nV+WAY6uS/xkk5/+9Q8wfCgqJ5kGLyTux56NM81mfiNFCXpaUnNqTikYhmXVy25n3L12r0qgpfbL/YdjIVBrf/oJ9EW7UCjkVEPbp+92vQVVIejfBKvzDM0zklo0DMPR6uZgoJ2fXtRKV+Mlkj4oP/304Ybj7EKuThqcL3vCNrtemiBYWsZQgpbT+4oCRC7TqZmD3mDuJe2hwh8/3Sd0f9+0NVWnfnsd/FwvvZnpE2CqL6e92TAj5Tyhpqao/ybrBa1/Ol1X+P3397ElqYo5VenE/Y4pLFBcuh57mWTpFJgvoihorZZtT03DtozcQLMeDInk2myjWZTS+f2BpXACcfd7AsWlD+JYNEKAEVJMEY5VN4yC4jiGoWimNa1rD7J4r3S6rzIyLzma4UgCvlK4Nn4EgNp+Hns1wyTN2pe4vJrOS6rnPY6jOf2m/V8CwRELjBm0wEo5wxo4HCqCDrm+RyOACsGsP2ZpjA56JCPpMp/muFwxBzqlMqg/1NfwHNauF1Q5gSY5jlP3QbJ5PE4lNqXQn5l1gqIHBp2S0xzD5MEowrJEngGpLDJqQauv05t3x8a2TEUSsEzG+0swUlFhMyJFJBIb2THl0318kakbNEsvpcV02ivge2iU4KRiYbDeGb1WO9U0o5hmY7EUlgQ+xXAyzSbEpRP+Zkf16z6+TCq0nmYiERTLigLrFSruuY8uM6oC/Ma21hNpWQOgMEFQuAhMGLTVtE6v9ksHiEsfxJRc0HXQQtFk1mtvqzZDeYUVdJBGh6w71noiwZDJe/f0KfBXyMgyL9Ob2hHu111uUae99e9sSoxTD85JJFiAdTlSM24VTkFHNAuKxLPLfRkg1YJAA18NuEJE0Pk0L4s49bPj3l4+VmcVs2BOb9JnTi1HuVOILJmBIDbFqL7dx6d1WQZ96X+cE0kQQkpXtELB64FAnWM6Si4n8cK9QlACy6W3MXAM0AU/57QJWjLNgWNqpqlpgHiUfZ7FMr7sNfVtfynoTvHPr4WyrK5qUzD1ADRnKEpO9e6WUoFeL/15nFg65y/NJGXJsJxcrqgWJUni0lkxvuk6+E1tvxgnImAOKQ1sReJkhud5Wr/xJB9Wh7f0PH4sQgiybExzAqoveSDu2/NQ23oePwLGjKTuODJGg1GCYJGb56GiG9+9v73n8cUMqxctRQeWC8raE6a/nUWfZH/pr9qDSvOFegEDXZBCfNuxv9Xn8QmWZpypnBWX44pP19rq0+oeo6qWQaS8u4h+XWu7z+PHIiyds1Q0g/us8GlddD1OsELa0EA7pXy71rbfEyVmsqrlyGwU9+taW39PFIXL+wrH6xua0T8dl/7qmKK8qTKv4/4xzbYVglFRTu+yQm9UFHSa3j0uXYuBREHw4a7T1rn0lhu9NUbxc6sBIefSJ4kD856oHaW2p4h/Jwq3x6VPEG+bS/2Pt86l/sfbZxq/Y6gw/HEAuNTneOtc6jv3eiKD4Hi7z6WQ2qBCyKVbdzzIpZBLfyGGCsMfQy4NfQy5NPzx74TaAlMbyKWQSyGXBqXnQGqDCn+uMBiOB7kUcink0qDUBip8tMIgOB7kUsilkEuDUhuo8FEKg+F4kEshl+4Il37u3XW/uDc1VNQWx7H/+e661M4oTIrI3Xv411ojhqTWcrvWSsPHpQqDpLDYKk5lUmgqtQxlJJu4OyeGed9Z+9lwcCkeXyWL8V4q4UXLtxCtDi6j+3OWz23EESGDUNkwcSmSt0wyhak5BUcER8sgGdNkEZrMkKmUSd6cQ5OJOovgOYdDUmS9iCRvjm+9d/2amEIRBkMwLZ6VEC7Na4iJeB+CwxAKcVbnZBBDAAeZoqwlES6LUKFSiCPFDGilnNdQc9msg2iI95E0ACxe4BVsdZDRsSzl/T0QMUwKEYnOKpieQ+QcYmWzVlzFMAVRwEEqjtUxEbG85/ysDPgIbDafRWhW0G9+NBxcSiUZhsHzyw/HMByKSBIuMnlcEkUpnUcR2mvJHJ3kdISWkkgKoWkkdaMwGG75f+LbdFCr/wpsFd9FnnmKybsQDCVLXw0hlxKRyP0bFx7E0cjdOVFwPLRc+qg4VNQGFX5eYRDc0uf10mW5cbCdi/8DZM1ATumH0PEAAAAASUVORK5CYII=");
+}
+.face {
+    position: relative;
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    background-color: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*  box-shadow: 0 0 5px #fefcc9,
+    10px -2px 20px #feec85,
+    -20px -5px 30px #ffae34,
+    20px -15px 40px #ec760c,
+   -20px -25px 50px #cd4606,
+   0 -30px 60px #973716,
+    6px -52px 70px #451b0e; */
+    box-shadow: 0px 0px 5px 32px #f00;
+
+
+
+    transform-style: preserve-3d;/* ??????????????????????? ??????????????????*/
+}
+
+/* 该属性box-shadow可以通过以下方式定义：
+
+两个，三个或四个长度值（<length>）：
+具有两个值，它们分别被视为阴影偏移坐标：<offset-x>和<offset-y>
+如果提供了第三个值，则它将对应于模糊半径： <blur-radius>
+如果提供第四个值，它将对应于扩展半径：<spread-radius>。
+到可选关键字 inset
+具有<color>可选的颜色值（）。 */
+
+/* 嘴巴 */
+.face::before{
+    content: ''; /* 内容 */
+    position: absolute;/* 绝对定位 */
+    top: 61%; /* 距上部 */
+    width: 35%;
+    height: 20%;
+    background: #b57700;
+    border-bottom-left-radius: 5em; /* 左下圆角 */
+    border-bottom-right-radius: 5em;
+    transition: .5s; /* 过渡时间 */
+  }
+
+  /* 悬停到face时嘴就行变化 */
+.face:hover::before{
+    content: '';
+    top: 61%; /* 距上部 */
+    width: 35%;
+    height: 8%;
+    /* 圆角归0为矩形 */
+    border-radius: 0;
+  }
+/* 眼睛框体 */
+.eyes{
+    position: relative;
+    top: -3em;
+    display: flex;
+  }
+
+  /* 2只眼睛 */
+.eyes .eye{
+    position: relative;
+    width: 7em;
+    height: 7em;
+   /*  display: block; */
+    background-color: #fff;
+    margin: 0 2em;
+    border-radius: 50%;
+    transform-style: preserve-3d;  
+  }
+
+/* 眼珠 */
+/* .eyes */ .eye::before{
+    content: '';
+    position: absolute;/* 绝对定位 是为了能在区域中显示出来*/
+    /* top: 50%; */
+    margin-top: 3.2em;
+    margin-left: 2em;
+    /* left: 25px; */
+    transform: translate(-50%, -50%); /* x,y轴移动 */
+    width: 3em;
+    height: 3em;
+    background: #333;
+    border-radius: 50%;
+  }
